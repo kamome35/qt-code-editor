@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FindDialog</class>
+ <widget class="QDialog" name="FindDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>494</width>
+    <height>169</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>5000</width>
+    <height>5000</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>検索</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/images/magnifier.png</normaloff>:/images/magnifier.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0" colspan="2">
+    <widget class="QComboBox" name="findText">
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+     <property name="maxCount">
+      <number>20</number>
+     </property>
+     <property name="insertPolicy">
+      <enum>QComboBox::InsertAtTop</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2" rowspan="3">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="findPrev">
+       <property name="text">
+        <string>上検索(&amp;U)</string>
+       </property>
+       <property name="shortcut">
+        <string>Shift+Return</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="findNext">
+       <property name="text">
+        <string>下検索(&amp;D)</string>
+       </property>
+       <property name="shortcut">
+        <string>F3</string>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="findMark">
+       <property name="text">
+        <string>該当マーク(&amp;B)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="exit">
+       <property name="text">
+        <string>キャンセル(&amp;X)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>検索オプション</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="caseSensitively">
+        <property name="text">
+         <string>大文字と小文字を区別する(&amp;C)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="wholeWords">
+        <property name="text">
+         <string>単語単位(&amp;W)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QCheckBox" name="regularExpression">
+        <property name="text">
+         <string>正規表現(&amp;R)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QCheckBox" name="findkeep">
+        <property name="text">
+         <string>検索後ダイアログを閉じる</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="4">
+       <widget class="QCheckBox" name="warningNavi">
+        <property name="text">
+         <string>見つからないときに警告を表示する</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1" colspan="3">
+       <layout class="QFormLayout" name="formLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>マークする(&amp;M)</string>
+          </property>
+          <property name="buddy">
+           <cstring>findFormat</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="findFormat">
+          <property name="whatsThis">
+           <string>検索結果の出力を「Grepウィンドウ」、「Grepエディタ」形式か選択できます</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QCheckBox" name="realtime">
+     <property name="text">
+      <string>リアルタイム検索</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>275</width>
+       <height>13</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>caseSensitively</tabstop>
+  <tabstop>findPrev</tabstop>
+  <tabstop>findNext</tabstop>
+  <tabstop>findMark</tabstop>
+  <tabstop>exit</tabstop>
+ </tabstops>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>exit</sender>
+   <signal>clicked()</signal>
+   <receiver>FindDialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>412</x>
+     <y>108</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>229</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>realtime</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>findkeep</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>58</x>
+     <y>146</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>104</x>
+     <y>111</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>realtime</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>warningNavi</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>58</x>
+     <y>146</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>200</x>
+     <y>86</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>findPrev</sender>
+   <signal>clicked()</signal>
+   <receiver>FindDialog</receiver>
+   <slot>findPrev()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>437</x>
+     <y>21</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>242</x>
+     <y>81</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>findNext</sender>
+   <signal>clicked()</signal>
+   <receiver>FindDialog</receiver>
+   <slot>findNext()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>437</x>
+     <y>50</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>242</x>
+     <y>81</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>findMark</sender>
+   <signal>clicked()</signal>
+   <receiver>FindDialog</receiver>
+   <slot>findMark()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>444</x>
+     <y>84</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>246</x>
+     <y>84</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>findPrev()</slot>
+  <slot>findNext()</slot>
+  <slot>findMark()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,47 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/arrow-circle-double-135.png</file>
+        <file>images/arrow-curve-000-left.png</file>
+        <file>images/arrow-curve-180-left.png</file>
+        <file>images/blue-documents.png</file>
+        <file>images/disk-return-black.png</file>
+        <file>images/disks-black.png</file>
+        <file>images/folder-horizontal-open.png</file>
+        <file>images/gear.png</file>
+        <file>images/keyboard.png</file>
+        <file>images/magnifier.png</file>
+        <file>images/scissors.png</file>
+        <file>images/door-open-in.png</file>
+        <file>images/selection-select-input.png</file>
+        <file>images/document.png</file>
+        <file>images/arrow-stop.png</file>
+        <file>images/arrow-stop-180.png</file>
+        <file>images/clipboard-paste.png</file>
+        <file>images/cross-button.png</file>
+        <file>images/cross-script.png</file>
+        <file>images/cross-white.png</file>
+        <file>images/folder-open-document.png</file>
+        <file>images/folder-search-result.png</file>
+        <file>images/D.png</file>
+        <file>images/minus.png</file>
+        <file>images/plus.png</file>
+        <file>images/document--pencil.png</file>
+        <file>images/application-sidebar-list.png</file>
+        <file>images/document-text.png</file>
+        <file>images/toggle.png</file>
+        <file>images/toggle-expand.png</file>
+        <file>images/inbox-download.png</file>
+        <file>images/inbox-upload.png</file>
+        <file>images/edit-color.png</file>
+        <file>images/arrow-step.png</file>
+        <file>images/arrow-skip-090.png</file>
+        <file>images/arrow-skip-270.png</file>
+        <file>images/magnifier--pencil.png</file>
+        <file>images/document-clock.png</file>
+        <file>images/magnifier-history.png</file>
+        <file>images/clock.png</file>
+        <file>images/tag--arrow.png</file>
+        <file>images/tag--minus.png</file>
+        <file>images/tag--pencil.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ConfigurationPage</class>
+ <widget class="QWidget" name="ConfigurationPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>610</width>
+    <height>380</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>設定</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>ウィンドウ</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="groupBox">
+         <property name="title">
+          <string>ウィンドウ設定</string>
+         </property>
+         <layout class="QFormLayout" name="formLayout_5">
+          <property name="fieldGrowthPolicy">
+           <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>X</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QSpinBox" name="pos_x">
+            <property name="suffix">
+             <string>px</string>
+            </property>
+            <property name="prefix">
+             <string/>
+            </property>
+            <property name="minimum">
+             <number>-999999</number>
+            </property>
+            <property name="maximum">
+             <number>999999</number>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>Y</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QSpinBox" name="pos_y">
+            <property name="suffix">
+             <string>px</string>
+            </property>
+            <property name="minimum">
+             <number>-999999</number>
+            </property>
+            <property name="maximum">
+             <number>999999</number>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>高さ</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QSpinBox" name="window_height">
+            <property name="suffix">
+             <string>px</string>
+            </property>
+            <property name="minimum">
+             <number>1</number>
+            </property>
+            <property name="maximum">
+             <number>999999</number>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QCheckBox" name="maximized">
+            <property name="text">
+             <string>最大化</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+            <property name="tristate">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QSpinBox" name="window_width">
+            <property name="suffix">
+             <string>px</string>
+            </property>
+            <property name="minimum">
+             <number>1</number>
+            </property>
+            <property name="maximum">
+             <number>999999</number>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>幅</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="title">
+          <string>ウィンドウ移動</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <widget class="QPushButton" name="window_pos_left">
+            <property name="text">
+             <string>左側</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QPushButton" name="window_pos_right">
+            <property name="text">
+             <string>右側</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="window_pos_middle">
+            <property name="text">
+             <string>中央</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>履歴</string>
+      </attribute>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>pos_x</tabstop>
+  <tabstop>pos_y</tabstop>
+  <tabstop>window_height</tabstop>
+  <tabstop>maximized</tabstop>
+  <tabstop>window_pos_left</tabstop>
+  <tabstop>window_pos_middle</tabstop>
+  <tabstop>window_pos_right</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>maximized</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>pos_x</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>155</x>
+     <y>171</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>155</x>
+     <y>62</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>maximized</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>pos_y</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>155</x>
+     <y>171</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>155</x>
+     <y>90</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>maximized</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>window_height</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>155</x>
+     <y>171</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>155</x>
+     <y>146</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>maximized</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>window_width</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>155</x>
+     <y>171</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>155</x>
+     <y>118</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>maximized</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>window_pos_middle</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>155</x>
+     <y>171</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>409</x>
+     <y>63</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>maximized</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>window_pos_right</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>155</x>
+     <y>171</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>490</x>
+     <y>63</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pos_x</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>ConfigurationPage</receiver>
+   <slot>setMainWindowPosX(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>155</x>
+     <y>62</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>275</x>
+     <y>204</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pos_y</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>ConfigurationPage</receiver>
+   <slot>setMainWindowPosY(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>155</x>
+     <y>90</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>275</x>
+     <y>204</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>window_width</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>ConfigurationPage</receiver>
+   <slot>setMainWindowWidth(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>155</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>275</x>
+     <y>204</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>window_height</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>ConfigurationPage</receiver>
+   <slot>setMainWindowHeight(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>155</x>
+     <y>146</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>275</x>
+     <y>204</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>maximized</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>ConfigurationPage</receiver>
+   <slot>setWindowMaximized(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>155</x>
+     <y>189</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>275</x>
+     <y>204</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>maximized</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>window_pos_left</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>200</x>
+     <y>177</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>417</x>
+     <y>63</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>setMainWindowPosX(int)</slot>
+  <slot>setMainWindowPosY(int)</slot>
+  <slot>setMainWindowWidth(int)</slot>
+  <slot>setMainWindowHeight(int)</slot>
+  <slot>setWindowMaximized(bool)</slot>
+ </slots>
+</ui>

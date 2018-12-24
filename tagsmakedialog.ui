@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TagsMakeDialog</class>
+ <widget class="QDialog" name="TagsMakeDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>150</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>150</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>タグファイル作成</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/images/tag--pencil.png</normaloff>:/images/tag--pencil.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="placeholderText">
+        <string>ディレクトリ</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>24</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>↑</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>参照...</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="3" column="0">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <layout class="QFormLayout" name="formLayout">
+     <property name="fieldGrowthPolicy">
+      <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+     </property>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>言語(&amp;L):</string>
+       </property>
+       <property name="buddy">
+        <cstring>languageType</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="languageType">
+       <item>
+        <property name="text">
+         <string>自動判別</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ant</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Asm</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Asp</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Awk</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Basic</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BETA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>C</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>C++</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>C#</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Cobol</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DosBatch</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Eiffel</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Erlang</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Flex</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Fortran</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>HTML</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Java</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>JavaScrip</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Lisp</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Lua</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Make</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>MatLab</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>OCaml</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pascal</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Perl</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>PHP</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Python</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>REXX</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ruby</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Scheme</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Sh</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SLang</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SML</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SQL</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Tcl</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Tex</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Vera</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Verilog</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>VHDL</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Vim</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>YACC</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>オプション(&amp;O):</string>
+       </property>
+       <property name="buddy">
+        <cstring>options</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="options"/>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <widget class="QCheckBox" name="checkBox">
+     <property name="text">
+      <string>サブフォルダを含める(&amp;S)</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>TagsMakeDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>227</x>
+     <y>130</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>TagsMakeDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>295</x>
+     <y>136</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

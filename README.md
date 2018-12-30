@@ -19,7 +19,7 @@
 - settings
   ![setting](https://user-images.githubusercontent.com/42742556/50400102-78516f80-07c7-11e9-8038-870aa82a986d.gif)
 
-## Library
+## Prerequisites
 
 - Qt 4.8
 - Ctags
